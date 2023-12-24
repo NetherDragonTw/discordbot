@@ -1,12 +1,12 @@
-import { SlashCommandBuilder } from 'discord.js'
-import { EmbedBuilder } from 'discord.js'
+import { SlashCommandBuilder, EmbedBuilder } from 'discord.js'
 
-const command = new SlashCommandBuilder()
+export const command = new SlashCommandBuilder()
     .setName("info")
-    .setDescription("Åã¥Ü¾÷¾¹¤H¸ê°T")
+    .setDescription("é¡¯ç¤ºæ©Ÿå™¨äººè³‡è¨Š")
 
-const action = async (ctx) => {
-	await channel.send({ embeds: [infoembed] });
+export const action = async (ctx) => {
+	await ctx.reply('s')
+	//await channel.send({ embeds: [infoembed] });
 }
 const infoembed = new EmbedBuilder()
 	.setColor(0x0099FF)
@@ -25,5 +25,4 @@ const infoembed = new EmbedBuilder()
 	.setImage('https://i.imgur.com/AfFp7pu.png')
 	.setTimestamp()
 	.setFooter({ text: 'Some footer text here', iconURL: 'https://i.imgur.com/AfFp7pu.png' });
-
-channel.send({ embeds: [exampleEmbed] });
+	//channel.send({ embeds: [infoembed] })
