@@ -6,7 +6,7 @@ dotenv.config()
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 client.once(Events.ClientReady, readyClient => {
-	console.log(`logged in ${readyClient.user.tag}`);
+	console.log(`logged as ${readyClient.user.tag}`);
 });
 
-client.login(process.env.token);
+client.login(process.env.TOKEN);
